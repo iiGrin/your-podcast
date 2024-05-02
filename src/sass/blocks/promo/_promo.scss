@@ -1,0 +1,45 @@
+.promo {
+    padding-top: 159px;
+    min-height: 100vh;
+
+    &__wrapper {
+        display: grid;
+        grid-template: 702px / repeat(2, 650px);
+    }
+
+    &__photo {
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+    }
+
+    &__block {
+        padding-top: 163px;
+        grid-template: auto / repeat(2, auto);
+        place-self: center center;
+    }
+    &__social {
+        margin-top: 90px;
+        width: 228px;
+        &__text {
+            font-size: 15px;
+        }
+        &__items {
+            margin-top: 16px;
+            width: 228px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item {
+            width: 32px;
+            height: 32px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

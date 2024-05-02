@@ -1,0 +1,108 @@
+header {
+    position: fixed;
+    height: 119px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar {
+    position: relative;
+    padding: 26px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1400px;
+    height: 119px;
+    &__logo {
+        background: none;
+    }
+
+    .burger__menu {
+        display: none;
+        right: 20px;
+        top: 0px;
+        width: 40px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 10;
+        transition: .6s all;
+
+        span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            transition: .6s all;
+    
+        }
+
+        &_active {
+            transition: .6s all;
+
+
+            :nth-child(1) {
+                transform: translateY(13px) rotate(-45deg);
+            }
+            :nth-child(2) {
+                width: 0px;
+            }
+            :nth-child(3) {
+                transform: translateY(-14px) rotate(45deg);
+            }
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    list-style-type: none;
+    width: 403px;
+    &__item {
+        font-size: 17px;
+        line-height: 27px;
+        font-weight: 400;
+        background: none;
+        a {
+            color: rgb(255, 255, 255);
+            &:hover {
+                color: rgb(17, 141, 168);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        height: 97px;
+    }
+
+    .navbar {
+        height: 97px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 76px;
+    }
+
+    .navbar {
+        padding: 13px 16px;
+        height: 76px;
+    }
+
+    .burger__menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+}
