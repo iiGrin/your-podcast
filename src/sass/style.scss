@@ -1,6 +1,9 @@
 @import 'libs/bootstrap-reboot.min';
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+@import 'base/variables';
+@import 'base/mixins';
+
 * {
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
@@ -54,8 +57,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @import "blocks/promo/promo";
+@import "blocks/episodes/episodes";
 
 @import "blocks/promo/promo-media";
+@import "blocks/episodes/episodes-media";
 
 @import "blocks/navpanel";
 @import "blocks/title";
+@import "blocks/buttons";
