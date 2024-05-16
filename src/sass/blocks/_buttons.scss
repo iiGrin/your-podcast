@@ -1,14 +1,13 @@
 .btn {
+    width: 208px;
+    height: 51px;
+    border-radius: 6px;
+    background-color: $main-color;
     border: none;
 
     &_item {
         position: absolute;
         bottom: 0;
-        width: 208px;
-        height: 51px;
-        border-radius: 6px;
-        background-color: $main-color;
-
     }
 }
 

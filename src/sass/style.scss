@@ -58,10 +58,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @import "blocks/promo/promo";
 @import "blocks/episodes/episodes";
+@import "blocks/subscribe/subscribe";
 
 @import "blocks/promo/promo-media";
 @import "blocks/episodes/episodes-media";
+@import "blocks/subscribe/subscribe-media";
 
 @import "blocks/navpanel";
 @import "blocks/title";
 @import "blocks/buttons";
+@import "blocks/subscribe-form";

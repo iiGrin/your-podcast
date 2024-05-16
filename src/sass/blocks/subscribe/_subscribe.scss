@@ -1,0 +1,30 @@
+.subscribe {
+    padding-top: 120px;
+
+    &__wrapper {
+        position: relative;
+        padding-top: 60px;
+        background-color: #000;
+        border-radius: 32px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__text {
+        font-size: 72px;
+        line-height: 80px;
+        padding-left: 60px;
+    }
+
+    &__photo {
+        position: absolute;
+        right: 0;
+        top: 0;
+        img {
+            height: 672px;
+            width: 650px;
+            object-fit: cover;
+            border-radius: 32px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.subscribe__form {
+    padding: 60px 0 57px 0;
+    margin-left: 60px;
+    height: 372px;
+    display: grid;
+    grid-template-columns: 522px;
+    grid-template-rows: repeat(2, 82px) 51px;
+    row-gap: 20px;
+
+    input {
+        padding: 26px 20px 27px 20px;
+        border: none;
+        border-radius: 6px;
+        background-color: #191919;
+    }
+}
