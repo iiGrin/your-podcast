@@ -16,7 +16,6 @@
 
     &_subscribe {
         color: $main-color;
-        padding-left: 60px;
     }
 
     &_item {
@@ -73,6 +72,13 @@
             text-align: center;
         }
 
+        &_subscribe {
+            width: 320px;
+            font-size: 72px;
+            line-height: 80px;
+            text-align: center;
+        }
+
         &_item {
             margin-top: 13px;
             font-size: 28px;
@@ -98,6 +104,10 @@
         &_section {
             font-size: 40px;
             line-height: 46px;
+        }
+
+        &_subscribe {
+            width: auto;
         }
 
         &_item {

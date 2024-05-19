@@ -20,19 +20,21 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <nav class="navbar">
-            <a href="" class="navbar__logo"><img src="../icons/logo-nav.svg" alt=""></a>
-            <ul class="menu">
-                <li class="menu__item"><a href="#home">Home</a></li>
-                <li class="menu__item"><a href="#episodes">Episodes</a></li>
-                <li class="menu__item"><a href="#about">About</a></li>
-                <li class="menu__item"><a href="#contacts">Contacts</a></li>
-            </ul>
-            <div class="burger__menu burger__menu_active">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="navbar__wrapper">
+                <a href="" class="logo"><img src="../icons/logo-nav.svg" alt=""></a>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#home">Home</a></li>
+                    <li class="menu__item"><a href="#episodes">Episodes</a></li>
+                    <li class="menu__item"><a href="#about">About</a></li>
+                    <li class="menu__item"><a href="#contacts">Contacts</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -112,23 +114,55 @@
     </section>
 
     <section class="subscribe">
-        <div class="container">
-            <div class="subscribe__wrapper">
-                <div class="subscribe__block">
-                    <div class="title title_section title_subscribe">Jacob Paulaner</div>
-                    <div class="subscribe__text">Subscribe <br>for updates</div>
-                    <form action="" class="subscribe__form">
-                        <input required type="text" placeholder="Name" name="name" class="subscribe__form-input">
-                        <input required type="email" placeholder="Email" name="email" class="subscribe__form-input">
-                        <button class="btn btn_submit">Submit</button>
-                    </form>
-                </div>
-                <div class="subscribe__photo">
-                    <img src="img/subscribe-photo.png" alt="">
+        <div class="background">
+            <div class="container">
+                <div class="subscribe__wrapper">
+                    <div class="subscribe__block">
+                        <div class="title title_section title_subscribe">Jacob Paulaner</div>
+                        <div class="subscribe__text">Subscribe <br>for updates</div>
+                        <form action="" class="subscribe__form">
+                            <input required type="text" placeholder="Name" name="name" class="subscribe__form-input">
+                            <input required type="email" placeholder="Email" name="email" class="subscribe__form-input">
+                            <button class="btn btn_submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="subscribe__photo">
+                        <img src="img/subscribe-photo.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="social-webs">
+                    <a href="" class="logo"><img src="../icons/logo-nav.svg" alt=""></a>
+                    <div class="social-webs__items">
+                        <a class="social__webs__item" href=""></a>
+                        <a class="social__webs__item" href=""></a>
+                        <a class="social__webs__item" href=""></a>
+                    </div>
+                </div>
+                <div class="page-links">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Episodes</a></li>
+                        <li><a href="">Subscribe</a></li>
+                    </ul>
+                </div>
+                <div class="promo__social__items">
+                    <a href="" class="promo__social__item"><img src="icons/social/spotify.svg" alt=""></a>
+                    <a href="" class="promo__social__item"><img src="icons/social/pocket.svg" alt=""></a>
+                    <a href="" class="promo__social__item"><img src="icons/social/soundcloud.svg" alt=""></a>
+                    <a href="" class="promo__social__item"><img src="icons/social/applecast.svg" alt=""></a>
+                    <a href="" class="promo__social__item"><img src="icons/social/overcast.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

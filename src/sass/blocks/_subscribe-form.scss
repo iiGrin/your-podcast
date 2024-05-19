@@ -1,16 +1,44 @@
 .subscribe__form {
     padding: 60px 0 57px 0;
-    margin-left: 60px;
     height: 372px;
     display: grid;
-    grid-template-columns: 522px;
     grid-template-rows: repeat(2, 82px) 51px;
     row-gap: 20px;
 
-    input {
+    &-input {
         padding: 26px 20px 27px 20px;
         border: none;
         border-radius: 6px;
         background-color: #191919;
+    }
+}
+
+@media (max-width: 1300px) {
+    .subscribe__form {
+    }
+}
+
+@media (max-width: 1200px) {
+    .subscribe__form {
+        padding: 30px 0 27px 0;
+        height: 313px;
+    }
+}
+
+@media (max-width: 992px) {
+    .subscribe__form {
+    }
+}
+
+@media (max-width: 768px) {
+    .subscribe__form {
+    }
+}
+
+@media (max-width: 576px) {
+    .subscribe__form {
+        &-input {
+            margin: 0 10px;
+        }
     }
 }
